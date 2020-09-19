@@ -10,7 +10,7 @@ function Events() {
       <PageHeader title="Events" />
 
       <main>
-        <h1>Conteudo da página</h1>
+        <h1>Conteudo</h1>
       </main>
     </div>
   );
