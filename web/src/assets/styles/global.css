@@ -1,0 +1,48 @@
+:root {
+  font-size: 60%;
+
+  --color-background: #F9F9F9;
+  --color-primary-light: #ECF8F8;
+  --color-primary: #98C1d9;
+  --color-primary-dark: #3D5A80;
+  --color-primary-darker: #293241;
+  --color-secundary: #EE6C4D;
+  --color-secundary-dark: #d4684e;
+  --color-title: #293241;
+  --color-text-complement: #797979;
+  --color-button-text: #FFFFFF;
+  --color-line-in-background: #CBCBCB;
+  --color-input-placeholder: #A4A4A4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100vh;
+}
+
+body {
+  background: var(--color-background);
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body,
+input,
+button,
+textarea {
+  font: 400 1.6rem Nunito;
+  color: var(--color-title);
+}
+
+/* .container {
+  width: 90vw;
+} */
