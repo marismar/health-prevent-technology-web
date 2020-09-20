@@ -7,12 +7,12 @@
   --color-primary-dark: #3D5A80;
   --color-primary-darker: #293241;
   --color-secundary: #EE6C4D;
-  --color-secundary-dark: #d4684e;
+  --color-secundary-dark: #913018;
   --color-title: #293241;
   --color-text-complement: #797979;
+  --color-header: #FFFFFF;
   --color-button-text: #FFFFFF;
   --color-line-in-background: #CBCBCB;
-  --color-input-placeholder: #A4A4A4;
 }
 
 * {
