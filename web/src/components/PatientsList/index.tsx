@@ -1,16 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import MaterialTable, { Column } from 'material-table';
 
+import api from '../../services/api';
 import './styles.css';
 
 interface Row {
-  name: string;
-  age: number;
-  phone: number;
-  address: string;
-  postalCode: number;
-  clinicalCondition: string;
+  id: number;
+  nome: string;
+  idade: number;
+  numero_telefone: number;
+  endereco: string;
+  cep: number;
+  doenca: string;
+  contato_emergencia: string;
+  data_ultima_consulta: string;
+  especialidade_medico: string;
   status: string;
 }
 
@@ -29,26 +34,35 @@ const theme = createMuiTheme({
 export default function PatientsList() {
   const [state, setState] = React.useState<TableState>({
     columns: [
-      { title: 'Name', field: 'name' },
-      { title: 'Age', field: 'age', type: 'numeric' },
-      { title: 'Phone', field: 'phone' },
-      { title: 'Address', field: 'address' },
-      { title: 'Postal code', field: 'postalCode'},
-      { title: 'Clinical condition', field: 'clinicalCondition'},
+      { title: 'Name', field: 'nome' },
+      { title: 'Age', field: 'nome', type: 'numeric' },
+      { title: 'Phone', field: 'numero_telefone' },
+      { title: 'Address', field: 'endereco' },
+      { title: 'Postal code', field: 'cep'},
+      { title: 'Clinical condition', field: 'doenca'},
       { title: 'Status', field: 'status'}
     ],
     data: [
-      {
-        name: 'Marismar',
-        age: 22,
-        phone: 83996110327,
-        address: 'Rua Aluísio Bezerra da Silva, 266',
-        postalCode: 58046720,
-        clinicalCondition: 'Diabetes',
-        status: 'Ativa',
-      }
     ],
   });
+
+  useEffect(() => {
+    api.get('/clients/').then(response => {
+        console.log(response.data);
+        setState({
+          columns: [
+            { title: 'Name', field: 'nome' },
+            { title: 'Age', field: 'nome', type: 'numeric' },
+            { title: 'Phone', field: 'numero_telefone' },
+            { title: 'Address', field: 'endereco' },
+            { title: 'Postal code', field: 'cep'},
+            { title: 'Clinical condition', field: 'doenca'},
+            { title: 'Status', field: 'status'}
+          ],
+          data: response.data,
+        })
+    });
+  },[]);
 
   return (
     <div id="patients-list">

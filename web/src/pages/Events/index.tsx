@@ -76,7 +76,7 @@ function Events() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <DrawerContant>
+      <DrawerContant key="1">
         <h2>Informações Gerais</h2>
 
         <Divider />
