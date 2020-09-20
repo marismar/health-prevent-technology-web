@@ -9,7 +9,7 @@ import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
 import Divider from '@material-ui/core/Divider';
 
 import PageHeader from '../../components/PageHeader';
-import { DrawerContant, SearchBar, TopBar, Main, SendEvents } from './style';
+import { DrawerContant, SearchBar, TopBar, Main, SendEvents } from './styles';
 import api from '../../services/api';
 
 const useStyles = makeStyles({
