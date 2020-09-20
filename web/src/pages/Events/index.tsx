@@ -10,6 +10,7 @@ import Divider from '@material-ui/core/Divider';
 
 import PageHeader from '../../components/PageHeader';
 import { DrawerContant, SearchBar, TopBar, Main, SendEvents } from './style';
+import api from '../../services/api';
 
 const useStyles = makeStyles({
   list: {
@@ -35,7 +36,12 @@ const StyledDrawer = styled(SwipeableDrawer)`
 `;
 
 function Events() {
-  
+
+  let cards = [];
+  for (let i=0; i < 9; i++){
+    cards.push({Title: "Doação de sangue"});
+  }
+
   const classes = useStyles();
 
   const [state, setState] = React.useState({
@@ -118,12 +124,12 @@ function Events() {
         </p>
         
         <SendEvents>
-          <button id="whatsapp">
+          <button id="whatsapp" >
             Whatsapp
             <AiOutlineWhatsApp/>
           </button>
 
-          <button id="sms">
+          <button id="sms" onClick={sendMessage}>
             SMS
             <BiSend/>
           </button>
@@ -138,11 +144,40 @@ function Events() {
       </DrawerContant>
     </div>
   );
-
-  let cards = [];
-  for (let i=0; i < 9; i++){
-    cards.push({Title: "Doação de sangue"});
+  
+  interface FormData {
+    eventName: string,
+    minAge: number,
+    maxAge: number,
+    clinicalCondition: string,
+    message: string,
+    company: string, 
   }
+  
+  async function sendMessage(){
+    console.log("Entrou !!!!!!");
+
+    const Data = {
+      eventName: "Testing Event Name",
+      minAge: 0,
+      maxAge: 80,
+      clinicalCondition: "hipertensao",
+      message: "This is just a payload message",
+      company: "Google"
+    };
+
+    const response = 
+    await api.post('notification/sms/disease', Data)
+      .then(res => {
+          console.log(res.data);
+      })
+      .catch((e) =>{
+          console.log('Somethinf went worng !');
+      });
+    
+    console.log(response);
+  }
+
 
   return (
 
@@ -175,7 +210,6 @@ function Events() {
               </li>      
           </div>
           ))}
-
         </div>
     
         <div>

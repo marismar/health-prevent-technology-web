@@ -102,6 +102,7 @@ export const SearchBar = styled.div`
 
 export const Main = styled.main`
   align-items: center;
+  margin: auto;
   
   h1 svg {
     margin-left: 14px;
@@ -112,6 +113,7 @@ export const Main = styled.main`
     grid-template-columns: 1fr 1fr 1fr;
     gap: 24px;
     margin-top: 54px;
+    margin-left: 150px;
   }
 
   .items-grid h2 {
