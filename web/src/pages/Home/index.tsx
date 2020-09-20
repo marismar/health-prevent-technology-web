@@ -24,7 +24,7 @@ function Home() {
           </div>
         </div>
         <div className="cards-container">
-          <Link to="/home" className="card-patient-content">
+          <Link to="/patients" className="card-patient-content">
             <RiCalendarEventLine size={70}/>
             Patients
           </Link>
