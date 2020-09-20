@@ -13,10 +13,14 @@ interface PageHeaderProps {
 const PageHeader: React.FC<PageHeaderProps> = (props) => {
   return (
     <div className="page-header">
-      <img src={logoImg} alt="Health Prevent Technology"/>
+      <Link to="/home">
+        <img src={logoImg} alt="Health Prevent Technology"/>
+      </Link>      
       <div className="details-content">
         <strong>{props.title}</strong>
-        <img src={avatarImg} alt="Usuário"/>
+        <Link to="/">
+          <img src={avatarImg} alt="Usuário"/>
+        </Link>
       </div>
     </div>    
   );
