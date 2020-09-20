@@ -7,7 +7,7 @@ import './styles.css';
 function Home() {
   return (
     <div id="home-page" className="container">
-      <PageHeader title="Home" />
+      <PageHeader title="Home Page" />
 
       <main>
         <h1>Conteudo da página</h1>
