@@ -30,7 +30,7 @@ Para utilizar a health prevent technology em seu ambiente, clone este repositór
 
 A plataforma é composta por aplicação web e API (Application Programming Interface). A web foi desenvolvida com Typescript e ReactJS. A API disponível em [github.com](https://github.com/mateustoin/Health-Prevent-Technology-API) foi desenvolvida utilizando Python e FastAPI.
 
-Este projeto foi desenvolvido na *Hackaton Zenvia Experience - New Horizon* organizada pela Shawee. 
+Este projeto foi desenvolvido na **Hackaton Zenvia Experience - New Horizon** organizada pela Shawee. 
 
 ## Licença
 
