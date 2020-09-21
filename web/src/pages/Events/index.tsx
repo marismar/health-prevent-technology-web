@@ -37,10 +37,48 @@ const StyledDrawer = styled(SwipeableDrawer)`
 
 function Events() {
 
-  let cards = [];
-  for (let i=0; i < 9; i++){
-    cards.push({Title: "Doação de sangue"});
-  }
+  let cards = [
+    {
+      Title: "vaccine for H1N1 ",
+    },
+    {
+      Title: "Tetanus vaccine",
+    },
+    {
+      Title: "Prostate health",
+    },
+    {
+      Title: "Glucose exam",
+    },
+    {
+      Title: "Blood pressure",
+    },
+    {
+      Title: "Yellow fever",
+    },
+    {
+      Title: "Cardiac cycle",
+    },
+    {
+      Title: "Donate organs",
+    },
+    {
+      Title: "Dengue fever",
+    },
+
+  ];
+
+  /**
+   * Vacina de H1N1
+   * Vacina de Tétano
+   * Outubro Azul
+   * Exame de glicose
+   * Doação de sangue
+   * Vacina de febre amarela
+   * Cardiograma
+   * Doação de orgãos
+   * Dengue
+   */
 
   const classes = useStyles();
 
@@ -187,7 +225,7 @@ function Events() {
       <Main>
 
         <TopBar>
-          <h1>Verifique seus Eventos</h1>
+          <h1>Check your events</h1>
 
           <SearchBar>
             <span> 
