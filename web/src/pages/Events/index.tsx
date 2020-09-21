@@ -196,12 +196,12 @@ function Events() {
     console.log("Entrou !!!!!!");
 
     const Data = {
-      eventName: "Testing Event Name",
+      eventName: "Hidratacao",
       minAge: 0,
       maxAge: 80,
       clinicalCondition: "hipertensao",
-      message: "This is just a payload message",
-      company: "Google"
+      message: "Beba agua constantemente !",
+      company: "Operadora de saude"
     };
 
     const response = 
