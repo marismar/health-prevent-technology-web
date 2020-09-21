@@ -161,7 +161,7 @@ function Events() {
           O lanchinho do recreio precisa ser adequado e saudável, assim como a alimentação feita em casa. Para dar certo, o importante é levar em consideração aquilo que a criança gosta e está acostumada a comer. Melhor ainda se ela puder participar da preparação, sentindo-se parte do processo. Essa é uma ótima estratégia para despertar o interesse pelos alimentos.
         </p>
         
-        <SendEvents>
+        <SendEvents key="2">
           <button id="whatsapp" >
             Whatsapp
             <AiOutlineWhatsApp/>
