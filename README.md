@@ -28,11 +28,11 @@ Para utilizar a health prevent technology em seu ambiente, clone este repositór
 
 ## Tecnologias
 
-A plataforma é composta por aplicação web e API (Application Programming Interface). A web foi desenvolvida com Typescript e ReactJS. A API disponível em [github.com](https://github.com/mateustoin/Health-Prevent-Technology) foi desenvolvida utilizando Python e Flask.
+A plataforma é composta por aplicação web e API (Application Programming Interface). A web foi desenvolvida com Typescript e ReactJS. A API disponível em [github.com](https://github.com/mateustoin/Health-Prevent-Technology-API) foi desenvolvida utilizando Python e FastAPI.
 
 Este projeto foi desenvolvido na *Hackaton Zenvia Experience - New Horizon* organizada pela Shawee. 
 
 ## Licença
 
-Copyright © 2020 [](),[](),[Marismar da Costa Silva](https://github.com/marismarcosta), [Gustavo Eraldo da Silva](https://github.com/EraldoCi).<br />
+Copyright © 2020 [Mateus Antonio da Silva](https://github.com/mateustoin), [João Victor Galvão](https://github.com/JVictorGalvao), [Marismar da Costa Silva](https://github.com/marismarcosta), [Gustavo Eraldo da Silva](https://github.com/EraldoCi).<br />
 This project is [MIT](https://github.com/marismarcosta/wireless-network/blob/master/LICENSE) licensed.
