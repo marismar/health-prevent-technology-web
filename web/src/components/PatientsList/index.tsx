@@ -52,7 +52,7 @@ export default function PatientsList() {
         setState({
           columns: [
             { title: 'Name', field: 'nome' },
-            { title: 'Age', field: 'nome', type: 'numeric' },
+            { title: 'Age', field: 'idade', type: 'numeric' },
             { title: 'Phone', field: 'numero_telefone' },
             { title: 'Address', field: 'endereco' },
             { title: 'Postal code', field: 'cep'},

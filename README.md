@@ -17,6 +17,8 @@ Com o objetivo de colaborar com os serviços de assistência médica, partindo d
 
 Além de auxiliar pacientes com doenças crônicas e em acompanhamento como gestantes, a health prevent pode contribuir em campanhas como vacinação e doação de sangue, comunicando todo o público-alvo com mensagens automáticas e/ou personalizadas.
 
+<img src=".github/health-prevent-technology.gif">
+
 ## Instalação
 
 Para utilizar a health prevent technology em seu ambiente, clone este repositório e na pasta *web* execute os seguintes comandos através do terminal.
