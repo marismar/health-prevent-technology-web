@@ -196,9 +196,9 @@ function Events() {
     console.log("Entrou !!!!!!");
 
     const Data = {
-      eventName: "Hidratacao",
-      minAge: 0,
-      maxAge: 80,
+      eventName: "Hidratacao testando",
+      minAge: 23,
+      maxAge: 29,
       clinicalCondition: "hipertensao",
       message: "Beba agua constantemente !",
       company: "Operadora de saude"
@@ -239,7 +239,7 @@ function Events() {
           {cards.map(card => (
 
             <div className="items-grid">
-              <li onClick={toggleDrawer('right', true)}>
+              <li onClick={toggleDrawer('right', true)} key={card.Title}>
                   <h2>{card.Title}</h2>
                   <span>
                     <a href="#"><BiEdit/></a>
