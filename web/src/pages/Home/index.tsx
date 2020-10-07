@@ -15,7 +15,7 @@ function Home() {
 
       <main>
         <div className="top-bar-content">
-          <h1>Welcome, Med Center</h1>
+          <h1>Welcome, MedCenter</h1>
           <div className="search-container">
             <span> 
               <RiSearchLine size={30} color="#1D2366"/>
